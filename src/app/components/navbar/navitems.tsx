@@ -13,11 +13,13 @@ const ListContainer = styled.ul`
 	`}
 `;
 const NavItem = styled.li<{ menu?: any }>`
-  ${tw`
+z-index: 1;  
+
+${tw`
 	text-xs
 	md:text-base
 	text-black
-	font-medium
+	font-bold
 	mr-1
 	md:mr-5
 	cursor-pointer
