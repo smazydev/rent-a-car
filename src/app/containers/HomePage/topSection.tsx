@@ -3,6 +3,7 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import blob from "../../../assets/images/blob.svg";
 import car from "../../../assets/images/mclaren-orange-big.png";
+import { Button } from "../../components/button";
 import { SCREENS } from "../../components/screenConstants";
 
 const TopSectionContainer = styled.div`
@@ -115,21 +116,30 @@ const StandaloneCar = styled.div`
     height: 100%;
     max-width: fit-content;
   }
-@media (min-width: ${SCREENS.sm}){
-height:16em;
-right: -6em;
-top:-6em;
-}
-@media (min-width: ${SCREENS.lg}){
-height:21em;
-right: -8em;
-top:-5em;
-}
-@media (min-width: ${SCREENS.xl}){
-height:30em;
-right: -13em;
-top:-9em;
-}
+  @media (min-width: ${SCREENS.sm}) {
+    height: 16em;
+    right: -6em;
+    top: -6em;
+  }
+  @media (min-width: ${SCREENS.lg}) {
+    height: 21em;
+    right: -8em;
+    top: -5em;
+  }
+  @media (min-width: ${SCREENS.xl}) {
+    height: 30em;
+    right: -13em;
+    top: -9em;
+  }
+`;
+
+const ButtonsContainer = styled.div`
+  ${tw`
+    flex
+    mt-4
+    flex-wrap
+  `}
+
 `;
 
 export function TopSection() {
@@ -141,6 +151,10 @@ export function TopSection() {
           Rent cars with ease and pay us later when you're done at the best
           possible prices.
         </Description>
+        <ButtonsContainer>
+          <Button text="Book a car!" theme="filled" />
+          <Button text="be a renter!" />
+        </ButtonsContainer>
       </LeftContainer>
       <RightContainer>
         <BlobContainer>
