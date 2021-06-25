@@ -9,12 +9,12 @@ export interface IMarginProps {
 const HorizontalMargin = styled.span<IMarginProps>`
   display: flex;
   min-width: ${({ margin }) =>
-    typeof margin === "string" ? margin : `${margin}px`};
+    typeof margin === "string" ? margin : `${margin}`};
 `;
 const VerticalMargin = styled.span<IMarginProps>`
   display: flex;
   min-width: ${({ margin }) =>
-    typeof margin === "string" ? margin : `${margin}px`};
+    typeof margin === "string" ? margin : `${margin}`};
 `;
 
 function Marginer(props: IMarginProps) {
