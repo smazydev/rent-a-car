@@ -19,7 +19,7 @@ pb-3
 mt-10
 lg:pt-6
 lg:pb-6
-lg:mt-20
+lg:mt-40
 `};
 `;
 
